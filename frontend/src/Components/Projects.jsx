@@ -19,7 +19,7 @@ import VERCEL from '../assets/VERCEL.svg?react'
 const Projects = () => {
   return (
     <>
-    <h1>Projects</h1>
+    <h1 className='title'>Projects</h1>
       <div className='project'>
 
         <div className='project-item'>

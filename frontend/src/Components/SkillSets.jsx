@@ -19,7 +19,7 @@ import PS from '../assets/Adobe PS.svg?react'
 const SkillSets = () => {
   return (
     <>
-    <h1>Skills & Stacks</h1>
+    <h1 className='title'>Skills & Stacks</h1>
       <div className='content-wrapper'>
 
         <div className='skill-content'>

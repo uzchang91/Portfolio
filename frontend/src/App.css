@@ -22,6 +22,7 @@
   --bg-trans: color-mix(in oklab, var(--bg) 24%, transparent);
 
   --point: linear-gradient(90deg, var(--primary), var(--secondary));
+  --sub-point: linear-gradient(90deg, var(--secondary), var(--purple));
   --tile: linear-gradient(180deg, var(--white-trans), var(--bg-trans));
 
   --shadow-0: color-mix(in oklab, var(--text) 24%, transparent);
@@ -51,8 +52,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
-
+  gap: 2.5rem;
 }
 
 body {
@@ -108,6 +108,16 @@ body {
   background: radial-gradient(480px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
       rgba(29, 78, 216, 0.15),
       transparent 80%);
+}
+
+.title {
+  width: fit-content;
+  background: var(--sub-point);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+  font-weight: 600;
 }
 
 .nav-wrapper {
@@ -280,7 +290,7 @@ section>span {
   position: relative;
   display: grid;
   grid-template-columns: repeat(3, minmax(100px, 1fr));
-  gap: 2rem;
+  gap: 1.5rem;
   z-index: 2;
 }
 
@@ -302,7 +312,6 @@ section>span {
 
 .icon-wrapper {
   width: 100%;
-  padding: 0.5rem;
   box-sizing: border-box;
 
   display: grid;
