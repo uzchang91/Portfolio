@@ -6,7 +6,7 @@ import SkillSets from './Components/SkillSets'
 import Projects from './Components/Projects'
 import Navigation from './Navigation'
 import BackgroundGrid from './BackgroundGrid'
-import RisingParticles from './Components/RisingParticles'
+import RisingParticles from './RisingParticles'
 
 function App() {
   useEffect(() => {
