@@ -1,0 +1,587 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+:root {
+  --primary: #0F5AF0;
+  --secondary: #45CDFF;
+  --bg: #000414;
+  --text: #ffffff;
+  --danger: #FF4766;
+  --warning: #FFBB00;
+
+  --text-highlight: color-mix(in oklab, var(--text) 64%, transparent);
+  --sub-text: color-mix(in oklab, var(--text) 92%, transparent);
+  --purple: color-mix(in oklab, var(--secondary)64%, var(--danger));
+  --green: color-mix(in oklab, var(--secondary)72%, var(--warning));
+
+  --primary-bg: color-mix(in oklab, var(--primary) 48%, var(--bg));
+  --warning-bg: color-mix(in oklab, var(--warning) 48%, var(--bg));
+
+  --white-trans: color-mix(in oklab, var(--text) 4%, transparent);
+  --white-trans2: color-mix(in oklab, var(--text) 24%, transparent);
+  --secondary-trans: color-mix(in oklab, var(--secondary) 24%, transparent);
+  --bg-trans: color-mix(in oklab, var(--bg) 24%, transparent);
+
+  --point: linear-gradient(90deg, var(--primary), var(--secondary));
+  --tile: linear-gradient(180deg, var(--white-trans), var(--bg-trans));
+
+  --shadow-0: color-mix(in oklab, var(--text) 24%, transparent);
+  --shadow-1: color-mix(in oklab, var(--text) 12%, transparent);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: var(--text);
+  list-style: none;
+  word-break: keep-all;
+  text-decoration: none;
+  font-family: 'Pretendard', 'sans-serif';
+}
+
+#root {
+  min-width: none;
+  max-width: 768px;
+  height: 100vh;
+  margin: auto;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+
+body {
+  background: linear-gradient(135deg,
+      var(--primary-bg),
+      var(--bg),
+      var(--warning-bg));
+  background-size: 200% 200%;
+  animation: gradientMove 7s ease-in-out infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.particles-bg {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  /* Behind everything */
+  pointer-events: none;
+}
+
+/* Ensure your other layers are stacked correctly */
+.spotlight-overlay {
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 10;
+  /* Above the particles and spotlight */
+}
+
+.spotlight-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+  /* The Magic */
+  background: radial-gradient(480px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+      rgba(29, 78, 216, 0.15),
+      transparent 80%);
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.nav-wrapper {
+  width: 300px;
+  height: 64px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+
+  position: absolute;
+  bottom: calc(0vh + 1.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0rem;
+
+  background: var(--white-trans);
+  border: 1px solid var(--white-trans2);
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+
+  backdrop-filter: blur(0.2rem);
+  box-shadow: inset 0 0 0.5em var(--shadow-0);
+}
+
+.nav-menu {
+  position: relative;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-content {
+  width: 40px;
+  height: 40px;
+  padding: 0.125rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  opacity: 0.5;
+
+  transition: all 0.4s ease;
+}
+
+.nav-menu.logo .nav-content {
+  opacity: 1;
+}
+
+.nav-menu.active .nav-content,
+.nav-menu:hover .nav-content {
+  background-color: var(--white-trans);
+  border-color: var(--primary);
+  opacity: 1;
+}
+
+.home-content {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+section:nth-child(2)>p {
+  font-size: 1.25rem;
+  padding: 1rem 0rem;
+}
+
+section:last-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+section>span {
+  color: var(--text-highlight);
+  font-weight: 200;
+}
+
+.home-intro:first-child {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.home-intro {
+  color: var(--sub-text);
+  font-size: 1.75rem;
+}
+
+.home-intro>span {
+  color: var(--text);
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.home-moto {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.home-moto span {
+  color: var(--text-highlight);
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.home-name {
+  width: fit-content;
+  background: var(--point);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
+  font-weight: 800;
+}
+
+.btn-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn {
+  width: 100%;
+  height: 48px;
+  padding: 0.5em 0.75rem;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background: transparent;
+  border: 1px solid var(--white-trans2);
+  border-radius: 1rem;
+
+  font-size: 1rem;
+  font-weight: 600;
+  backdrop-filter: blur(0.2rem);
+  cursor: pointer;
+  text-decoration-line: none;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: var(--white-trans);
+  border: 1px solid var(--primary);
+}
+
+.btn-icon,
+.btn-icon path {
+  width: 24px;
+  height: 24px;
+}
+
+.content-wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.skill-content {
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  background: var(--white-trans);
+  border: 1px solid var(--white-trans2);
+  border-radius: 1.5rem;
+
+  backdrop-filter: blur(0.2rem);
+}
+
+.skill-content:first-child {
+  grid-column: span 2;
+}
+
+.skill-title {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.icon-wrapper {
+  width: 100%;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  font-size: 0.75rem;
+  color: var(--text);
+}
+
+.icon-tiles {
+  width: 95px;
+  height: 95px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+  background: var(--tile);
+  border: 1px solid var(--white-trans);
+  border-radius: 1rem;
+  color: var(--text);
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.icon-tiles:hover {
+  background-color: var(--bg-trans);
+}
+
+.icon-tiles>span {
+  position: absolute;
+  bottom: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+}
+
+.icon-tiles:hover>span {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.e-icons {
+  width: 56px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.icon-tiles:hover .e-icons {
+  width: 48px;
+  height: 40px;
+}
+
+.project {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem 1.5rem;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-item h3 {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.project-item p {
+  color: var(--text-highlight);
+  font-size: 0.95rem;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title h1 {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.project-title span {
+  color: var(--sub-text);
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.project-img {
+  width: 100%;
+  background-color: var(--bg);
+  border-radius: 0.5rem;
+}
+
+.bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -5;
+  pointer-events: none;
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  padding: 0.5rem;
+  padding-right: 0.75rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  background: var(--white-trans);
+  border: 1px solid var(--white-trans2);
+  border-radius: 0.875rem;
+
+  font-size: 0.875rem;
+}
+
+.badge-icon {
+  padding: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.education {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.edu-section-1 {
+  grid-column: 1/3;
+}
+
+.edu-section-2 {
+  grid-column: 2/4;
+}
+
+.fit {
+  width: fit-content;
+  padding-left: 0.75rem;
+  color: var(--text-highlight);
+  border-color: var(--sub-text);
+  font-weight: 400;
+}
+
+.edu {
+  color: var(--purple);
+  border-color: var(--purple);
+  font-weight: 600;
+}
+
+.wrk {
+  color: var(--green);
+  border-color: var(--green);
+  font-weight: 600;
+}
+
+.border {
+  padding: 1rem;
+  background-color: var(--white-trans);
+  border: 1px solid var(--white-trans2);
+  border-radius: 1.5rem;
+}
+
+.email-module {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 0;
+  z-index: 100;
+  min-width: 376px;
+  padding: 1rem;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  background: var(--white-trans);
+  border: 1px solid var(--white-trans2);
+  border-radius: 1rem;
+  backdrop-filter: blur(0.5rem);
+  box-shadow: 0 8px 32px var(--shadow-1), inset 0 0 0.5rem var(--shadow-0);
+
+  animation: email-module-in 0.3s ease-in-out;
+}
+
+@keyframes email-module-in {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.email-module-label {
+  font-size: 1rem;
+  color: var(--text-highlight);
+  font-weight: 200;
+}
+
+.email-module-address {
+  font-size: 1rem;
+  color: var(--sub-text);
+  font-family: monospace;
+  word-break: break-all;
+}
+
+.email-module-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.email-action-btn {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background: transparent;
+  border: 1px solid var(--white-trans2);
+  border-radius: 0.75rem;
+  color: var(--text-highlight);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.email-action-btn:hover {
+  background: var(--white-trans);
+  border-color: var(--secondary-trans);
+  color: var(--text);
+}
+
+.email-action-btn--primary {
+  background: var(--white-trans);
+  border-color: var(--primary);
+  color: var(--text);
+}
+
+.email-action-btn--primary:hover {
+  background: color-mix(in oklab, var(--primary) 24%, transparent);
+  border-color: var(--secondary);
+}
