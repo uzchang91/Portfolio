@@ -18,128 +18,131 @@ import PS from '../assets/Adobe PS.svg?react'
 
 const SkillSets = () => {
   return (
-    <div className='content-wrapper'>
+    <>
+    <h1>Skills & Stacks</h1>
+      <div className='content-wrapper'>
 
-      <div className='skill-content'>
+        <div className='skill-content'>
 
-        <h3 className='skill-title'>FrontEnd</h3>
+          <h3 className='skill-title'>FrontEnd</h3>
 
-        <div className='icon-wrapper'>
+          <div className='icon-wrapper'>
 
-          <div className='icon-tiles'>
-            <HTML5 className='e-icons' />
-            <span>HTML5</span>
+            <div className='icon-tiles'>
+              <HTML5 className='e-icons' />
+              <span>HTML5</span>
+            </div>
+            <div className='icon-tiles'>
+              <CSS className='e-icons' />
+              <span>CSS3</span>
+            </div>
+            <div className='icon-tiles'>
+              <TWCSS className='e-icons' />
+              <span>Tailwind</span>
+            </div>
+            <div className='icon-tiles'>
+              <BS5 className='e-icons' />
+              <span>Bootstrap</span>
+            </div>
+            <div className='icon-tiles'>
+              <JS className='e-icons' />
+              <span>JavaScript</span>
+            </div>
+            <div className='icon-tiles'>
+              <REACT className='e-icons' />
+              <span>React.js</span>
+            </div>
+
           </div>
-          <div className='icon-tiles'>
-            <CSS className='e-icons' />
-            <span>CSS3</span>
+
+        </div>
+
+        <div className='skill-content'>
+
+          <h3 className='skill-title'>BackEnd</h3>
+
+          <div className='icon-wrapper'>
+
+            <div className='icon-tiles'>
+              <NODE className='e-icons' />
+              <span>Node.js</span>
+            </div>
+            <div className='icon-tiles'>
+              <EXPRESS className='e-icons' />
+              <span>Express.js</span>
+            </div>
+
           </div>
-          <div className='icon-tiles'>
-            <TWCSS className='e-icons' />
-            <span>Tailwind CSS</span>
+
+        </div>
+
+        <div className='skill-content'>
+
+          <h3 className='skill-title'>DataBase</h3>
+
+          <div className='icon-wrapper'>
+
+            <div className='icon-tiles'>
+              <MySQL className='e-icons' />
+              <span>MySQL</span>
+            </div>
+            <div className='icon-tiles'>
+              <SUPA className='e-icons' />
+              <span>Supabase</span>
+            </div>
+            <div className='icon-tiles'>
+              <FIREB className='e-icons' />
+              <span>Firebase</span>
+            </div>
+
           </div>
-          <div className='icon-tiles'>
-            <BS5 className='e-icons' />
-            <span>Bootstrap</span>
+
+        </div>
+
+        <div className='skill-content'>
+
+          <h3 className='skill-title'>Host</h3>
+
+          <div className='icon-wrapper'>
+
+            <div className='icon-tiles'>
+              <VERCEL className='e-icons' />
+              <span>Vercel</span>
+            </div>
+            <div className='icon-tiles'>
+              <RENDER className='e-icons' />
+              <span>Render</span>
+            </div>
+
           </div>
-          <div className='icon-tiles'>
-            <JS className='e-icons' />
-            <span>JavaScript</span>
-          </div>
-          <div className='icon-tiles'>
-            <REACT className='e-icons' />
-            <span>React.js</span>
+
+        </div>
+
+        <div className='skill-content'>
+
+          <h3 className='skill-title'>UI/UX Tools</h3>
+
+          <div className='icon-wrapper'>
+
+            <div className='icon-tiles'>
+              <Figma className='e-icons' />
+              <span>Figma</span>
+            </div>
+            <div className='icon-tiles'>
+              <IL className='e-icons' />
+              <span>Illustrator</span>
+            </div>
+            <div className='icon-tiles'>
+              <PS className='e-icons' />
+              <span>Photoshop</span>
+            </div>
+
           </div>
 
         </div>
 
       </div>
-
-      <div className='skill-content'>
-
-        <h3 className='skill-title'>BackEnd</h3>
-
-        <div className='icon-wrapper'>
-
-          <div className='icon-tiles'>
-            <NODE className='e-icons' />
-            <span>Node.js</span>
-          </div>
-          <div className='icon-tiles'>
-            <EXPRESS className='e-icons' />
-            <span>Express.js</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div className='skill-content'>
-
-        <h3 className='skill-title'>DataBase</h3>
-
-        <div className='icon-wrapper'>
-
-          <div className='icon-tiles'>
-            <MySQL className='e-icons' />
-            <span>MySQL</span>
-          </div>
-          <div className='icon-tiles'>
-            <SUPA className='e-icons' />
-            <span>Supabase</span>
-          </div>
-          <div className='icon-tiles'>
-            <FIREB className='e-icons' />
-            <span>Firebase</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div className='skill-content'>
-
-        <h3 className='skill-title'>Host</h3>
-
-        <div className='icon-wrapper'>
-
-          <div className='icon-tiles'>
-            <VERCEL className='e-icons' />
-            <span>Vercel</span>
-          </div>
-          <div className='icon-tiles'>
-            <RENDER className='e-icons' />
-            <span>Render</span>
-          </div>
-
-        </div>
-
-      </div>
-
-      <div className='skill-content'>
-
-        <h3 className='skill-title'>UI/UX Tools</h3>
-
-        <div className='icon-wrapper'>
-
-          <div className='icon-tiles'>
-            <Figma className='e-icons' />
-            <span>Figma</span>
-          </div>
-          <div className='icon-tiles'>
-            <IL className='e-icons' />
-            <span>Illustrator</span>
-          </div>
-          <div className='icon-tiles'>
-            <PS className='e-icons' />
-            <span>Photoshop</span>
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
+    </>
   )
 }
 
