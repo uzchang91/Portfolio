@@ -10,7 +10,7 @@ const Navigation = ({ setActiveMenu, activeMenu, }) => {
     <div className='nav-wrapper'>
 
       <div
-        className='nav-menu logo'
+        className='logo'
         onClick={() => setActiveMenu('Home')}
         title='홓'
       >

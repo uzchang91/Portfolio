@@ -65,14 +65,14 @@ const Home = () => {
           <span>// 개발 지향점</span>
           <h1 className='home-name'>Sojourn</h1>
         <p>다양한 기술 스택을 넘나들며 최적의 해답을 탐험하는 여정.</p>
-        <div className='btn-grid' style={{ position: 'relative' }}>
+        <div className='btn-grid'>
           <a href="https://github.com/uzchang91" target='_blank'>
             <button className='btn'>
               <GIT className='btn-icon' />
               CrownDJester
             </button>
           </a>
-          <div style={{ position: 'relative' }}>
+          <div>
             <button
               ref={gmailBtnRef}
               className='btn'

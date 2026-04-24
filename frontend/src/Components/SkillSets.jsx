@@ -120,7 +120,7 @@ const SkillSets = () => {
 
         <div className='skill-content'>
 
-          <h3 className='skill-title'>UI/UX Tools</h3>
+          <h3 className='skill-title'>Tools</h3>
 
           <div className='icon-wrapper'>
 
