@@ -13,8 +13,8 @@ import FIREB from '../assets/FIREBASE.svg?react'
 import RENDER from '../assets/RENDER.svg?react'
 import VERCEL from '../assets/VERCEL.svg?react'
 import Figma from '../assets/FIGMA.svg?react'
-import IL from '../assets/ADOBE IL.svg?react'
-import PS from '../assets/ADOBE PS.svg?react'
+import IL from '../assets/Adobe IL.svg?react'
+import PS from '../assets/Adobe PS.svg?react'
 
 const SkillSets = () => {
   return (
