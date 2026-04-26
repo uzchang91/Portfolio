@@ -26,13 +26,13 @@ const Projects = () => {
           <img src={Lotte} alt="Lotte Static Page" className='project-img' />
           <div className='project-title'>
             <h1>롯데 웰푸드 <span>정적 웹 프로젝트</span></h1>
-            <a href="https://2025-est-fe-9.github.io/TeamCrunky" target="_blank">
-              <Link />
-            </a>
+            <div className='badge-list'>
+              <span className='badge fit'>2025.12.10 ~ 2025.12.16</span>
+            </div>
           </div>
-          <div className='badge-list'>
-            <span className='badge fit'>2025.12.10 ~ 2025.12.16</span>
-          </div>
+          <a href="https://2025-est-fe-9.github.io/TeamCrunky" target="_blank">
+            보기<Link />
+          </a>
           <p>
             팀 프로젝트로 HTML 및 CSS을 활용하여 롯데 웰푸드 화면을 구현하는 페이지입니다.
           </p>
@@ -47,15 +47,15 @@ const Projects = () => {
           <img src={PumOn} alt="품ON" className='project-img' />
           <div className='project-title'>
             <h1>품:ON <span>유기동물 보호현황 플랫폼</span></h1>
-            <a href="https://uzchang91.github.io/PumON" target="_blank">
-              <Link />
-            </a>
+            <div className='badge-list'>
+              <span className='badge fit'>2026.1.19 ~ 2026.1.27</span>
+            </div>
           </div>
-          <div className='badge-list'>
-            <span className='badge fit'>2026.1.19 ~ 2026.1.27</span>
-          </div>
+          <a href="https://uzchang91.github.io/PumON" target="_blank">
+            보기<Link />
+          </a>
           <p>
-            팀 프로젝트로 행정안전부의 공공데이터 Open API와 JavaScript를 활용하여 동물보호센터 관리 플랫폼을 구현.
+            팀 프로젝트로 공공데이터 Open API와 JavaScript를 활용하여 유기동물 보호현황 관리 플랫폼을 구현.
           </p>
           <div className='badge-list'>
             <span className='badge'><HTML5 className='badge-icon' /> HTML</span>
@@ -69,16 +69,16 @@ const Projects = () => {
           <img src={FinSight} alt="FinSight" className='project-img' />
           <div className='project-title'>
             <h1>FinSight <span>모이투자 학습 플랫폼</span></h1>
-            <a href="https://project3-finsight.vercel.app" target="_blank">
-              <Link />
-            </a>
+            <div className='badge-list'>
+              <span className='badge fit'>2026.3.9 ~ 2026.4.6</span>
+            </div>
           </div>
-          <div className='badge-list'>
-            <span className='badge fit'>2026.3.9 ~ 2026.4.6</span>
-          </div>
+          <a href="https://project3-finsight.vercel.app" target="_blank">
+            보기<Link />
+          </a>
           <p>
             팀 프로젝트로 React.js, Node.js, MySQL을 활용하여 모이투자 플랫폼 구현.
-            개발 목적은 투자를 어려워하는 사람들을 위해 게임과 같이 업적과 공부로 서비스를 즐길수 있는 플랫폼.
+            개발 목적은 주식투자를 어려워하는 청년들을 위해 포인트로 모의투자를 게임과 같은 환경에서 업적 달성 및 퀴즈 풀기로 주식투자를 즐길수 있는 플랫폼.
             현재 Vercel와 Render를 통해 호스팅 중입니다.
           </p>
           <div className='badge-list'>
