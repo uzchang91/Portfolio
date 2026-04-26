@@ -1,4 +1,20 @@
 import React from 'react'
+import HTML5 from '../assets/HTML.svg?react'
+import CSS from '../assets/CSS.svg?react'
+import TWCSS from '../assets/TWCSS.svg?react'
+import BS5 from '../assets/BOOTSTRAP.svg?react'
+import JS from '../assets/JS.svg?react'
+import REACT from '../assets/REACT.svg?react'
+import NODE from '../assets/NODE.svg?react'
+import EXPRESS from '../assets/EXPRESS.svg?react'
+import MySQL from '../assets/MySQL.svg?react'
+import SUPA from '../assets/SUPABASE.svg?react'
+import FIREB from '../assets/FIREBASE.svg?react'
+import RENDER from '../assets/RENDER.svg?react'
+import VERCEL from '../assets/VERCEL.svg?react'
+import Figma from '../assets/FIGMA.svg?react'
+import IL from '../assets/Adobe IL.svg?react'
+import PS from '../assets/Adobe PS.svg?react'
 
 const Education = () => {
   return (
@@ -18,6 +34,16 @@ const Education = () => {
               프론트엔드 개발자 부트캠프 수료 및 실무 프로젝트 수행,
               실제 서비스 모델을 기반으로 한 웹 서비스 프론트엔드 아키텍처 설계 및 구현.
             </p>
+            <div className='badge-list'>
+              <span className='badge'><HTML5 className='badge-icon' /> HTML</span>
+              <span className='badge'><CSS className='badge-icon' /> CSS</span>
+              <span className='badge'><JS className='badge-icon' /> JavaScript</span>
+              <span className='badge'><FIREB className='badge-icon' /> Firebase</span>
+              <span className='badge'><REACT className='badge-icon' /> React</span>
+              <span className='badge'><NODE className='badge-icon' /> Node</span>
+              <span className='badge'><MySQL className='badge-icon' /> MySQL</span>
+              <span className='badge'><SUPA className='badge-icon' /> Supabase</span>
+            </div>
           </div>
         </div>
 
@@ -34,6 +60,10 @@ const Education = () => {
               Figma 및 Adobe Creative Cloud(Illustrator, Photoshop)를 활용한
               IoT 웹 서비스 인터페이스 설계 및 디자인 시스템 구축.
             </p>
+            <div className='badge-list'>
+              <span className='badge'><Figma className='badge-icon' /> Figma</span>
+              <span className='badge'><IL className='badge-icon' /> Illustrator</span>
+            </div>
           </div>
         </div>
 
@@ -49,6 +79,12 @@ const Education = () => {
             <p>
               미국 버지니아주에 위치한 4년제 사립대학에서 그래픽디자인 전공으로 학사 졸업.
             </p>
+            <div className='badge-list'>
+              <span className='badge'><HTML5 className='badge-icon' /> HTML</span>
+              <span className='badge'><CSS className='badge-icon' /> CSS</span>
+              <span className='badge'><IL className='badge-icon' /> Illustrator</span>
+              <span className='badge'><PS className='badge-icon' /> Photoshop</span>
+            </div>
           </div>
         </div>
 

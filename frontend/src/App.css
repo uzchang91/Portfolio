@@ -10,9 +10,9 @@
 
   --text-highlight: color-mix(in oklab, var(--text) 64%, transparent);
   --sub-text: color-mix(in oklab, var(--text) 92%, transparent);
-  --purple: color-mix(in oklab, var(--primary)72%, var(--danger));
+  --purple: color-mix(in oklab, color-mix(in oklab, var(--primary), var(--text)), var(--danger)24%);
   --green: color-mix(in oklab, var(--secondary)72%, var(--warning));
-
+  
   --primary-bg: color-mix(in oklab, var(--primary) 48%, var(--bg));
   --warning-bg: color-mix(in oklab, var(--warning) 48%, var(--bg));
 
@@ -488,8 +488,10 @@ section>span {
 .fit {
   width: fit-content;
   padding-left: 0.75rem;
-  color: var(--sub-text);
+
   border-color: var(--sub-text);
+
+  color: var(--sub-text);
   font-weight: 400;
 }
 
@@ -593,4 +595,23 @@ section>span {
 .email-action-btn--primary:hover {
   background: color-mix(in oklab, var(--primary) 24%, transparent);
   border-color: var(--secondary);
+}
+
+.link path,
+.link {
+  width: fit-content;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-highlight);
+  fill: var(--text-highlight);
+}
+
+.content-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
