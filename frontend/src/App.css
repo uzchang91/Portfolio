@@ -37,6 +37,7 @@
   word-break: keep-all;
   text-decoration: none;
   font-family: 'Pretendard', 'sans-serif';
+  -webkit-tap-highlight-color: transparent;
 }
 
 #root {
@@ -150,7 +151,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   border-radius: 1rem;
 }
 
