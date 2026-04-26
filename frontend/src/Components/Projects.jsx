@@ -19,7 +19,7 @@ import VERCEL from '../assets/VERCEL.svg?react'
 const Projects = () => {
   return (
     <>
-    <h1 className='title'>Projects</h1>
+      <h1 className='title'>Projects</h1>
       <div className='project'>
 
         <div className='project-item'>
@@ -29,6 +29,9 @@ const Projects = () => {
             <a href="https://2025-est-fe-9.github.io/TeamCrunky" target="_blank">
               <Link />
             </a>
+          </div>
+          <div className='badge-list'>
+            <span className='badge fit'>2025.12.10 ~ 2025.12.16</span>
           </div>
           <p>
             팀 프로젝트로 HTML 및 CSS을 활용하여 롯데 웰푸드 화면을 구현하는 페이지입니다.
@@ -48,6 +51,9 @@ const Projects = () => {
               <Link />
             </a>
           </div>
+          <div className='badge-list'>
+            <span className='badge fit'>2026.1.19 ~ 2026.1.27</span>
+          </div>
           <p>
             팀 프로젝트로 행정안전부의 공공데이터 Open API와 JavaScript를 활용하여 동물보호센터 관리 플랫폼을 구현.
           </p>
@@ -66,6 +72,9 @@ const Projects = () => {
             <a href="https://project3-finsight.vercel.app" target="_blank">
               <Link />
             </a>
+          </div>
+          <div className='badge-list'>
+            <span className='badge fit'>2026.3.9 ~ 2026.4.6</span>
           </div>
           <p>
             팀 프로젝트로 React.js, Node.js, MySQL을 활용하여 모이투자 플랫폼 구현.
