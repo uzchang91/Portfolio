@@ -31,7 +31,7 @@ const Projects = () => {
             </a>
           </div>
           <p>
-            HTML 및 CSS을 활용하여 롯데 웰푸드 화면을 구현하는 페이지입니다.
+            팀 프로젝트로 HTML 및 CSS을 활용하여 롯데 웰푸드 화면을 구현하는 페이지입니다.
           </p>
           <div className='badge-list'>
             <span className='badge'><HTML5 className='badge-icon' /> HTML</span>
@@ -49,7 +49,7 @@ const Projects = () => {
             </a>
           </div>
           <p>
-            Open API와 JavaScript를 활용하여 롯데 웰푸드 화면을 구현하는 작업입니다.
+            팀 프로젝트로 행정안전부의 공공데이터 Open API와 JavaScript를 활용하여 동물보호센터 관리 플랫폼을 구현.
           </p>
           <div className='badge-list'>
             <span className='badge'><HTML5 className='badge-icon' /> HTML</span>
@@ -68,7 +68,7 @@ const Projects = () => {
             </a>
           </div>
           <p>
-            React.js, Node.js, MySQL을 활용하여 롯데 웰푸드 화면을 구현하는 작업입니다.
+            팀 프로젝트로 React.js, Node.js, MySQL을 활용하여 롯데 웰푸드 화면을 구현하는 작업입니다.
             현재 Vercel와 Render를 통해 호스팅 중입니다.
           </p>
           <div className='badge-list'>
