@@ -134,7 +134,7 @@ body {
   align-items: center;
   gap: 0rem;
 
-  background: var(--white-trans);
+  background: var(--bg-trans);
   border: 1px solid var(--white-trans2);
   border-radius: 1.5rem;
   font-size: 0.875rem;
@@ -153,6 +153,10 @@ body {
   align-items: center;
 
   border-radius: 1rem;
+}
+
+.nav-menu:active {
+  background-color: transparent;
 }
 
 .nav-content {
@@ -179,7 +183,7 @@ body {
 
 .nav-menu.active .nav-content,
 .nav-menu:hover .nav-content {
-  background-color: var(--white-trans);
+  background-color: var(--bg-trans);
   border-color: var(--primary);
   opacity: 1;
 }
