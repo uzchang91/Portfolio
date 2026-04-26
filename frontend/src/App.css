@@ -150,6 +150,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  border-radius: 1rem;
 }
 
 .nav-content {
@@ -481,7 +483,7 @@ section>span {
 .fit {
   width: fit-content;
   padding-left: 0.75rem;
-  color: var(--text-highlight);
+  color: var(--sub-text);
   border-color: var(--sub-text);
   font-weight: 400;
 }

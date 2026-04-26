@@ -10,7 +10,7 @@ const Education = () => {
           <div className='project-item border'>
             <div className='badge-list'>
               <span className='badge fit edu'>학습</span>
-              <span className='badge fit'>2025.11 ~ 2026.04</span>
+              <span className='badge fit'>2025.11 ~ 2026.04(수료)</span>
             </div>
             <h3>교육생</h3>
             <span>㈔스마트인재개발원</span>
@@ -41,7 +41,7 @@ const Education = () => {
           <div className='project-item border'>
             <div className='badge-list'>
               <span className='badge fit edu'>학습</span>
-              <span className='badge fit'>2010.08 ~ 2012.05(입대)</span>
+              <span className='badge fit'>2010.08 ~ 2012.05(군입대)</span>
               <span className='badge fit'>2017.01 ~ 2019.08(졸업)</span>
             </div>
             <h3>학생</h3>
