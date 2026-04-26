@@ -68,7 +68,8 @@ const Projects = () => {
             </a>
           </div>
           <p>
-            팀 프로젝트로 React.js, Node.js, MySQL을 활용하여 롯데 웰푸드 화면을 구현하는 작업입니다.
+            팀 프로젝트로 React.js, Node.js, MySQL을 활용하여 모이투자 플랫폼 구현.
+            개발 목적은 투자를 어려워하는 사람들을 위해 게임과 같이 업적과 공부로 서비스를 즐길수 있는 플랫폼.
             현재 Vercel와 Render를 통해 호스팅 중입니다.
           </p>
           <div className='badge-list'>
