@@ -11,8 +11,6 @@ import RisingParticles from './RisingParticles'
 function App() {
   useEffect(() => {
     const handleMouseMove = (e) => {
-      // We set the variables on the document element (html) 
-      // so they can be used anywhere in your CSS files.
       document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
       document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
     };
@@ -32,7 +30,7 @@ function App() {
   ]
 
   const getInitialMenu = () => {
-    const hash = window.location.hash.replace('#', '')
+    const hash = window.location.hash.replace('/', '')
     const menu = hash.split('/')[0]
     return VALID_MENUS.includes(menu) ? menu : 'Home'
   }

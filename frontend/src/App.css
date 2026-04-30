@@ -8,20 +8,21 @@
   --danger: #FF4766;
   --warning: #FFBB00;
 
-  --text-highlight: color-mix(in oklab, var(--text) 64%, transparent);
+  --text-highlight: color-mix(in oklab, var(--text) 56%, transparent);
   --sub-text: color-mix(in oklab, var(--text) 92%, transparent);
   --purple: color-mix(in oklab, color-mix(in oklab, var(--primary), var(--text)), var(--danger)24%);
   --green: color-mix(in oklab, var(--secondary)72%, var(--warning));
-  
+
   --primary-bg: color-mix(in oklab, var(--primary) 48%, var(--bg));
   --warning-bg: color-mix(in oklab, var(--warning) 48%, var(--bg));
 
   --white-trans: color-mix(in oklab, var(--text) 4%, transparent);
   --white-trans2: color-mix(in oklab, var(--text) 24%, transparent);
+  --primary-trans: color-mix(in oklab, var(--primary) 24%, transparent);
   --secondary-trans: color-mix(in oklab, var(--secondary) 24%, transparent);
   --bg-trans: color-mix(in oklab, var(--bg) 24%, transparent);
 
-  --point: linear-gradient(90deg, var(--primary), var(--secondary));
+  --point: linear-gradient(115deg, var(--primary), var(--purple));
   --sub-point: linear-gradient(90deg, var(--secondary), var(--purple));
   --tile: linear-gradient(180deg, var(--white-trans), var(--bg-trans));
 
@@ -42,7 +43,7 @@
 
 #root {
   min-width: none;
-  max-width: 768px;
+  max-width: 1024px;
   min-height: 100vh;
   padding: 1rem 1rem 8rem;
   margin: auto;
@@ -117,7 +118,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.5rem;
+  font-size: 4rem;
   font-weight: 600;
 }
 
@@ -197,48 +198,58 @@ body {
   gap: 5rem;
 }
 
-section:nth-child(2)>p {
-  font-size: 1.25rem;
-  padding: 1rem 0rem;
+.h-section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
-section:last-child {
+.h-section-2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-section>span {
-  color: var(--text-highlight);
-  font-weight: 200;
-}
-
-.home-intro:first-child {
-  font-size: 2.5rem;
-  font-weight: 600;
-}
-
 .home-intro {
+  display: flex;
+  align-items: first baseline;
+  gap: 0.5rem;
   color: var(--sub-text);
-  font-size: 1.75rem;
+  font-size: 4rem;
+  font-weight: 800;
 }
 
-.home-intro>span {
-  color: var(--text);
-  font-size: 2.5rem;
-  font-weight: 700;
+.home-title {
+  color: var(--text-highlight);
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .home-moto {
   color: var(--text);
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 500;
+}
+
+.h-body,
+.h-body>span {
+  min-width: 72%;
+  max-width: 768px;
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.125rem;
+  color: var(--sub-text);
+
+  line-height: 2;
 }
 
 .home-moto span {
   color: var(--text-highlight);
-  font-size: 1.1rem;
-  font-weight: 200;
+  font-size: 1.25rem;
+  font-weight: 400;
 }
 
 .home-name {
@@ -247,8 +258,6 @@ section>span {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4rem;
-  font-weight: 800;
 }
 
 .btn-grid {
@@ -265,6 +274,7 @@ section>span {
   box-sizing: border-box;
 
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 1rem;
 
@@ -274,7 +284,7 @@ section>span {
 
   font-size: 1rem;
   font-weight: 600;
-  backdrop-filter: blur(0.2rem);
+  /* backdrop-filter: blur(0.2rem); */
   cursor: pointer;
   text-decoration-line: none;
 
@@ -549,14 +559,9 @@ section>span {
   }
 }
 
-.email-module-label {
-  font-size: 1rem;
-  color: var(--text-highlight);
-  font-weight: 200;
-}
-
 .email-module-address {
-  font-size: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
   color: var(--sub-text);
   font-family: monospace;
   word-break: break-all;
@@ -564,25 +569,26 @@ section>span {
 
 .email-module-actions {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
 }
 
 .email-action-btn {
   flex: 1;
+  height: 48px;
   padding: 0.5rem 0.75rem;
   font-size: 1rem;
   font-weight: 400;
   background: transparent;
   border: 1px solid var(--white-trans2);
   border-radius: 0.75rem;
-  color: var(--text-highlight);
+  color: var(--sub-text);
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
 
 .email-action-btn:hover {
   background: var(--white-trans);
-  border-color: var(--secondary-trans);
+  border-color: var(--secondary);
   color: var(--text);
 }
 
@@ -593,7 +599,7 @@ section>span {
 }
 
 .email-action-btn--primary:hover {
-  background: color-mix(in oklab, var(--primary) 24%, transparent);
+  background: var(--primary-trans);
   border-color: var(--secondary);
 }
 

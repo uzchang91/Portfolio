@@ -15,6 +15,7 @@ import VERCEL from '../assets/VERCEL.svg?react'
 import Figma from '../assets/FIGMA.svg?react'
 import IL from '../assets/Adobe IL.svg?react'
 import PS from '../assets/Adobe PS.svg?react'
+import Spine from '../assets/Spine.svg?react'
 
 const SkillSets = () => {
   return (
@@ -135,6 +136,10 @@ const SkillSets = () => {
             <div className='icon-tiles'>
               <PS className='e-icons' />
               <span>Photoshop</span>
+            </div>
+            <div className='icon-tiles'>
+              <Spine className='e-icons' />
+              <span>Spine</span>
             </div>
 
           </div>

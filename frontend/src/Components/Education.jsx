@@ -15,6 +15,7 @@ import VERCEL from '../assets/VERCEL.svg?react'
 import Figma from '../assets/FIGMA.svg?react'
 import IL from '../assets/Adobe IL.svg?react'
 import PS from '../assets/Adobe PS.svg?react'
+import Spine from '../assets/Spine.svg?react'
 
 const Education = () => {
   return (
@@ -53,7 +54,7 @@ const Education = () => {
               <span className='badge fit wrk'>실무</span>
               <span className='badge fit'>2021.10 ~ 2024.04</span>
             </div>
-            <h3>UIUX 디자이너</h3>
+            <h3>UI/UX 디자이너</h3>
             <span>㈜아이엠알</span>
             <p>
               IoT 플랫폼 웹 서비스 UX/UX 디자인 및 자산 관리,
@@ -70,14 +71,34 @@ const Education = () => {
         <div className='edu-section-1'>
           <div className='project-item border'>
             <div className='badge-list'>
+              <span className='badge fit wrk'>실무</span>
+              <span className='badge fit'>2019.12 ~ 2021.10</span>
+            </div>
+            <h3>게임 아트 디자인</h3>
+            <span>One Second Studio</span>
+            <p>
+              SPINE, PS 및 여러 개발도구를 사용하여 모바일게임에 사용되는 전반적인 UI/UX 개발.
+            </p>
+            <div className='badge-list'>
+              <span className='badge'><PS className='badge-icon' /> PhotoShop</span>
+              <span className='badge'><IL className='badge-icon' /> Illustrator</span>
+              <span className='badge'><Spine className='badge-icon' /> Spine</span>
+            </div>
+          </div>
+        </div>
+
+        <div className='edu-section-2'>
+          <div className='project-item border'>
+            <div className='badge-list'>
               <span className='badge fit edu'>학습</span>
               <span className='badge fit'>2010.08 ~ 2012.05(군입대)</span>
               <span className='badge fit'>2017.01 ~ 2019.08(졸업)</span>
             </div>
-            <h3>학생</h3>
+            <h3>대학생</h3>
             <span>Liberty University</span>
             <p>
-              미국 버지니아주에 위치한 4년제 사립대학에서 그래픽디자인 전공으로 학사 졸업.
+              미국 버지니아주 소재 사립 대학교에서 그래픽 디자인을 전공하며 시각적 커뮤니케이션의 기초를 탄탄히 다졌습니다.
+              글로벌한 환경에서 얻은 디자인 감각은 현재 기획과 디자인을 아우르는 소중한 밑거름이 되고 있습니다.
             </p>
             <div className='badge-list'>
               <span className='badge'><HTML5 className='badge-icon' /> HTML</span>
