@@ -10,15 +10,23 @@ import RisingParticles from './RisingParticles'
 
 function App() {
   useEffect(() => {
+
     const handleMouseMove = (e) => {
       document.documentElement.style.setProperty('--mouse-x', `${e.clientX}px`);
       document.documentElement.style.setProperty('--mouse-y', `${e.clientY}px`);
     };
+    
+    const handlePopState = () => {
+      const path = window.location.pathname.replace('/', '')
+      setActiveMenu(VALID_MENUS.includes(path) ? path : 'Home')
+    }
 
     window.addEventListener('mousemove', handleMouseMove);
+    window.addEventListener('popstate', handlePopState);
 
     return () => {
       window.removeEventListener('mousemove', handleMouseMove);
+      window.removeEventListener('popstate', handlePopState);
     };
   }, []);
 
@@ -30,15 +38,14 @@ function App() {
   ]
 
   const getInitialMenu = () => {
-    const hash = window.location.hash.replace('/', '')
-    const menu = hash.split('/')[0]
-    return VALID_MENUS.includes(menu) ? menu : 'Home'
+    const path = window.location.pathname.replace('/', '')
+    return VALID_MENUS.includes(path) ? path : 'Home'
   }
 
   const [activeMenu, setActiveMenu] = useState(getInitialMenu)
 
   const handleMenuChange = (menu) => {
-    window.location.hash = menu
+    window.history.pushState(null, '', `/${menu === 'Home' ? '' : menu}`)
     setActiveMenu(menu)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }

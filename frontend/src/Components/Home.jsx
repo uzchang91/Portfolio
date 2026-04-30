@@ -68,7 +68,7 @@ const Home = () => {
           </p>
         </div>
         <h1 className='home-moto'>
-          Sojourn <span>다양한 기술 스택을 넘나들며 최적의 해답을 탐험하는 여정가 입니다.</span>
+          Sojourn <span>- 다양한 기술 스택을 넘나들며 최적의 해답을 탐험하는 여정가 입니다.</span>
         </h1>
 
         <div className='h-body'>
@@ -103,7 +103,7 @@ const Home = () => {
 
       <div className='h-section-2'>
         <span className='home-title'><span className='wrk'>// </span> 나의 모토</span>
-        <p className='home-moto'>Simplify, simplify <span>From Walden by Henry David Thoreau</span></p>
+        <p className='home-moto'>Simplify, simplify <span>- From Walden by Henry David Thoreau</span></p>
       </div>
 
     </div>

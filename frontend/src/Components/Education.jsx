@@ -16,6 +16,7 @@ import Figma from '../assets/FIGMA.svg?react'
 import IL from '../assets/Adobe IL.svg?react'
 import PS from '../assets/Adobe PS.svg?react'
 import Spine from '../assets/Spine.svg?react'
+import AF from '../assets/AfterEffects.svg?react'
 
 const Education = () => {
   return (
@@ -32,8 +33,8 @@ const Education = () => {
             <h3>교육생</h3>
             <span>㈔스마트인재개발원</span>
             <p>
-              프론트엔드 개발자 부트캠프 수료 및 실무 프로젝트 수행,
-              실제 서비스 모델을 기반으로 한 웹 서비스 프론트엔드 아키텍처 설계 및 구현.
+              실제 서비스 모델을 분석하고 이를 웹 환경에 최적화된 아키텍처로 구현하는 프로젝트를 수행했습니다.
+              단순한 기능 구현을 넘어, 사용자 경험을 고려한 안정적인 프론트엔드 구조를 설계하며 개발자로서의 실무 기틀을 다졌습니다.
             </p>
             <div className='badge-list'>
               <span className='badge'><HTML5 className='badge-icon' /> HTML</span>
@@ -57,9 +58,9 @@ const Education = () => {
             <h3>UI/UX 디자이너</h3>
             <span>㈜아이엠알</span>
             <p>
-              IoT 플랫폼 웹 서비스 UX/UX 디자인 및 자산 관리,
-              Figma 및 Adobe Creative Cloud(Illustrator, Photoshop)를 활용한
-              IoT 웹 서비스 인터페이스 설계 및 디자인 시스템 구축.
+              IoT 플랫폼의 복잡한 데이터를 직관적인 UI/UX로 시각화하고, 원활한 협업을 위한 전사적 디자인 시스템을 구축했습니다.
+              Figma와 Adobe Creative Cloud를 활용해 자산 관리 서비스의 인터페이스를 설계하며,
+              사용자 중심의 명료한 웹 경험을 제공하는 데 주력했습니다.
             </p>
             <div className='badge-list'>
               <span className='badge'><Figma className='badge-icon' /> Figma</span>
@@ -77,11 +78,14 @@ const Education = () => {
             <h3>게임 아트 디자인</h3>
             <span>One Second Studio</span>
             <p>
-              SPINE, PS 및 여러 개발도구를 사용하여 모바일게임에 사용되는 전반적인 UI/UX 개발.
+              스타트업 One Second Studio에서 모바일 게임 아트를 총괄하며,
+              캐릭터 디자인부터 애니메이션, 이펙트, UI/UX까지 게임의 시각적 경험 전반을 설계했습니다.
+              Spine과 Photoshop 등 다양한 도구를 유연하게 활용하여 기술적 제약 안에서 최상의 퍼포먼스를 내는 게임 환경을 구현했습니다.
             </p>
             <div className='badge-list'>
               <span className='badge'><PS className='badge-icon' /> PhotoShop</span>
               <span className='badge'><IL className='badge-icon' /> Illustrator</span>
+              <span className='badge'><AF className='badge-icon' /> After Effects</span>
               <span className='badge'><Spine className='badge-icon' /> Spine</span>
             </div>
           </div>

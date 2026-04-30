@@ -9,7 +9,7 @@
   --warning: #FFBB00;
 
   --text-highlight: color-mix(in oklab, var(--text) 56%, transparent);
-  --sub-text: color-mix(in oklab, var(--text) 92%, transparent);
+  --sub-text: color-mix(in oklab, var(--text) 88%, transparent);
   --purple: color-mix(in oklab, color-mix(in oklab, var(--primary), var(--text)), var(--danger)24%);
   --green: color-mix(in oklab, var(--secondary)72%, var(--warning));
 
@@ -41,11 +41,33 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+::-webkit-scrollbar {
+  width: 0.25rem;
+  height: 0.25rem;
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+  border-radius: 2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--white-trans2);
+  border-radius: 2rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 #root {
   min-width: none;
   max-width: 1024px;
   min-height: 100vh;
-  padding: 1rem 1rem 8rem;
+  padding: 3rem 1rem 8rem;
   margin: auto;
   box-sizing: border-box;
 
@@ -141,7 +163,7 @@ body {
   font-size: 0.875rem;
 
   z-index: 999;
-  backdrop-filter: blur(0.2rem);
+  backdrop-filter: blur(0.5rem);
   box-shadow: inset 0 0 0.5em var(--shadow-0);
 }
 
@@ -306,8 +328,8 @@ body {
   width: 100%;
   position: relative;
   display: grid;
-  grid-template-columns: repeat(3, minmax(100px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(72px, 1fr));
+  gap: 4.5rem 1.5rem;
   z-index: 2;
 }
 
@@ -332,7 +354,7 @@ body {
   box-sizing: border-box;
 
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(66px, 1fr));
   flex-wrap: wrap;
   gap: 1rem;
 
@@ -341,8 +363,8 @@ body {
 }
 
 .icon-tiles {
-  width: 92px;
-  height: 92px;
+  width: 72px;
+  height: 72px;
   padding: 0.5rem;
   box-sizing: border-box;
 
@@ -360,7 +382,7 @@ body {
   font-size: 0.875rem;
   font-weight: 400;
   text-align: center;
-  transition: all 0.4s ease;
+  transition: all 0.4s ease-in-out;
 }
 
 .icon-tiles:hover {
@@ -369,22 +391,26 @@ body {
 }
 
 .icon-tiles>span {
+  width: 56px;
+  height: 40px;
   position: absolute;
-  bottom: 0.25rem;
+  top: calc(0px + 23%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   opacity: 0;
   visibility: hidden;
-  transition: all 0.4s ease;
+  transition: visibility 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
 .icon-tiles:hover>span {
-  display: flex;
   opacity: 1;
   visibility: visible;
 }
 
 .e-icons {
   width: 48px;
-  height: 44px;
+  height: 48px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -394,6 +420,7 @@ body {
 .icon-tiles:hover .e-icons {
   width: 44px;
   height: 36px;
+  opacity: 0.12;
 }
 
 .project {
@@ -484,7 +511,7 @@ body {
 .education {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  gap: 4.5rem 1.5rem;
 }
 
 .edu-section-1 {
