@@ -78,9 +78,8 @@ const Education = () => {
             <h3>게임 아트 디자인</h3>
             <span>One Second Studio</span>
             <p>
-              스타트업 One Second Studio에서 모바일 게임 아트를 총괄하며,
+              Spine과 Photoshop 등 다양한 도구를 활용하여 모바일 게임 아트를 총괄하며,
               캐릭터 디자인부터 애니메이션, 이펙트, UI/UX까지 게임의 시각적 경험 전반을 설계했습니다.
-              Spine과 Photoshop 등 다양한 도구를 유연하게 활용하여 기술적 제약 안에서 최상의 퍼포먼스를 내는 게임 환경을 구현했습니다.
             </p>
             <div className='badge-list'>
               <span className='badge'><PS className='badge-icon' /> PhotoShop</span>
